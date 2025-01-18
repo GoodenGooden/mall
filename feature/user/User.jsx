@@ -29,18 +29,18 @@ function User() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className=" overflow-x-hidden overflow-y-hidden absolute left-2/4 z-50 h-4/5 w-full bg-white list-none ">
+            <div className=" absolute w-1/2 left-2/4 z-50 h-4/5 lg:w-full bg-white list-none ">
            
            <div className="flex flex-col  pt-6 pl-6">
             <label >Name </label>  
             <input
-              className="border mb-4  border-gray-300 shadow-sm py-3 px-3 w-1/3  rounded-lg  focus:border-blue-300"
+              className="border mb-4  border-gray-300 shadow-sm py-3 px-3 w-1/2  rounded-lg  focus:border-blue-300"
               type="text" placeholder="name" value={username} onChange={(e) => setUsername(e.target.value)} />
 
          
               <label>Country </label>
             <input
-              className="border mb-4 border-gray-300 shadow-sm py-3 px-3 w-1/3  rounded-lg  focus:border-blue-300"
+              className="border mb-4 border-gray-300 shadow-sm py-3 px-3 w-1/2  rounded-lg  focus:border-blue-300"
               type="text" placeholder="country" value={country} onChange={(e) => setCountry(e.target.value)} />
            </div>
         <div className="absolute left-11 rounded-full bg-zinc-500 p-3 md:left-32 lg:left-60 ">
