@@ -10,7 +10,7 @@ import Likeditem from "../feature/liked/Likeditem"
 import ShoppedItem from "../feature/shopped/ShoppedItem"
 import Emptycart from "../feature/empty/Emptycart"
 import { loader as loaderItem } from "../services/loader"
-import Emptyliked from "../feature/likedItems/emptyLiked"
+import Emptyliked from "../feature/likedItems/EmptyLiked"
 
 
 
