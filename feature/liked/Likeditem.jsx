@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 import Heart from "../../SVG/Heart"
 import Homeicon from "../../SVG/Homeicon"
 import Shoppingcart from "../../SVG/Shoppingcart"
-import JustItem from "./justItem"
+import JustItem from "./JustItem"
 import { getLiked } from "./likedSlice"
 import { getUser } from "../user/userSlice"
 import { useNavigate } from "react-router-dom"
@@ -14,6 +14,7 @@ function Likeditem() {
 
     if (liked.length === 0 ) {
         Navigate('/likeditems')
+        
     }
     
     return (
