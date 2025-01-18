@@ -6,7 +6,7 @@ import Plus from "../../SVG/Plus"
 import { removeLiked } from "./likedSlice"
 
 
-function JustItem({liker}) {
+function Justitem({liker}) {
   const {id, image, description} = liker
 const dispatch = useDispatch()
 
@@ -28,5 +28,5 @@ const dispatch = useDispatch()
     )
 }
 
-export default JustItem 
+export default Justitem 
 
