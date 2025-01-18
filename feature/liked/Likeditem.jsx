@@ -16,6 +16,10 @@ function Likeditem() {
         Navigate('/likeditems')
         
     }
+
+    function handleClick () {
+        Navigate ('/main')
+    }
     
     return (
         <div className="w-auto h-screen">
@@ -44,11 +48,11 @@ function Likeditem() {
 ))}
         </div>
         
-<div className="flex justify-center gap-10  mt-8">
+<div className="flex justify-center gap-10  pb-6  mt-8">
     
-        <button className="bg-slate-900 text-white w-3/12 ">Continue Shopping</button>
+        <button onClick={handleClick} className="bg-slate-900  text-white w-3/12 ">Continue Shopping</button>
     
-    <button className="bg-slate-900 text-white w-3/12">Proceed To Pay</button>
+    <button className="bg-slate-900  text-white w-3/12">Proceed To Pay</button>
     
 </div>
         </div>

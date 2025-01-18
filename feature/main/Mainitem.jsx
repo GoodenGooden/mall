@@ -38,7 +38,7 @@ console.log(item)
         <div className="text-center">
      <h2 className=" text-slate-900 font-mono mb-4 antialiased text-sm uppercase lg:text-3xl font-extrabold "> New Arrivals </h2>
         </div>
-        <div className="grid px-3 gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ">
+        <div className="grid px-3 gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 pb-6 ">
               
 {item.map((itemed) =>(
     <Item itemed={itemed} key={itemed.id} />
