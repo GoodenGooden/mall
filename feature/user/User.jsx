@@ -29,7 +29,7 @@ function User() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className=" absolute left-2/4 z-50 h-4/5 w-full bg-white list-none ">
+            <div className=" overflow-x-hidden overflow-y-hidden absolute left-2/4 z-50 h-4/5 w-full bg-white list-none ">
            
            <div className="flex flex-col  pt-6 pl-6">
             <label >Name </label>  
