@@ -25,7 +25,7 @@ console.log(allShopped)
                 <input className="border-gray-300 border shadow-sm lg:py-3 px-3 w-6/12" type="text" placeholder="search" />
                 
                
-                <div className="flex gap-3 lg:gap-8">
+                <div className="flex pt-3 pr-4 gap-3 lg:gap-8">
                     <Homeicon />
                     <Heart />
                     <Shoppingcart />

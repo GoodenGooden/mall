@@ -14,7 +14,7 @@ function Emptycart() {
 
     return (
         <div className="w-auto h-screen">
-            <div className="flex justify-between p-2 lg:p-8 ">
+            <div className="flex pt-3 pr-4 justify-between p-2 lg:p-8 ">
             <div>
                 <img className="size-8 lg:size-12" src="/image/download.png" alt="img" />
                 </div>
