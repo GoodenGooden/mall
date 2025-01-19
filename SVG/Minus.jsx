@@ -1,7 +1,7 @@
 
 
 
-function Minus({ id, handleCart, cartShopped}) {
+function Minus({ id, handleCart}) {
 
 
     function handleClick () {     

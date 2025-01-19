@@ -16,13 +16,14 @@ reducers: {
         );
         if (existingItem) {
             // If item already exists, just increase the quantity
-            existingItem.quantity += action.payload.quantity;
-            existingItem.totalPrice =
+           existingItem.quantity += action.payload.quantity;
+           existingItem.totalPrice =
                 existingItem.quantity * existingItem.price;
         } else {
             // If item doesn't exist, add it as a new item
             state.cart.push(action.payload);
-        }
+       }
+
     },
 
     removeCart (state, action) {

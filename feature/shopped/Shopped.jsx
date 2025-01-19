@@ -3,12 +3,13 @@ import { useDispatch, useSelector } from "react-redux"
 import Hearted from "../../SVG/Hearted"
 import Minus from "../../SVG/Minus"
 import Plus from "../../SVG/Plus"
-import { decreaseShoppedItem, getCurrentQuantityById, increaseShoppedItem, removeCart } from "./shoppedSlice"
+import { decreaseShoppedItem, getCurrentQuantityById,increaseShoppedItem,removeCart } from "./shoppedSlice"
+import ShoppedItem from "./ShoppedItem"
 
 
 
 function Shopped({shop}) {
-    const {id, image, price, totalPrice, description} = shop
+    const {id, image, price, totalPrice, title, description} = shop
 const dispatch = useDispatch()
 const currentQuantity = useSelector(getCurrentQuantityById(id))
  //   function handleCart () {
@@ -24,12 +25,12 @@ const currentQuantity = useSelector(getCurrentQuantityById(id))
     }
 }
 
-//function handleIncrease () {
-//    if (currentQuantity >= 0) {
- //       dispatch(increaseShoppedItem(id));     its not increasing in the shopped component cos push payload is added to the plus icon
+function handleIncrease () {
+    if (currentQuantity >= 0) {
+       dispatch(increaseShoppedItem(id));    // its not increasing in the shopped component cos push payload is added to the plus icon
     
-//}
-//}
+}
+}
 
     return (
         <div>
@@ -38,9 +39,10 @@ const currentQuantity = useSelector(getCurrentQuantityById(id))
             <div className="text-white"> <Minus id={id} handleCart={handleDecrease} cartShopped={true}/> </div>
             <div className="text-white"> {currentQuantity} </div>
             <div className="text-white"> <Hearted /> </div>
-            <div className="text-white"> <Plus id={id} handleCart cartShopped={true} /> </div>
+            <div className="text-white"> <Plus id={id}  handleShopped={handleIncrease} cartShopped={true} /> </div>
         </div>
-        <div className=" text-center text-slate-900"> #{totalPrice} </div>
+        <div className=" text-center font-bold text-slate-900"> #{totalPrice} </div>
+        <div className=" text-center font-bold text-slate-900"> {title} </div>
         <div className="text-slate-900">{description} </div>
         </div>
     )

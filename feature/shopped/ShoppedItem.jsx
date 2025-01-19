@@ -5,10 +5,13 @@ import Shoppingcart from "../../SVG/Shoppingcart"
 import Shopped from "./Shopped"
 import { getCart } from "./shoppedSlice"
 import { useNavigate } from "react-router-dom"
+import { getUser } from "../user/userSlice"
 
 function ShoppedItem() {
 const allShopped = useSelector(getCart)
 const Navigate = useNavigate();
+const username = useSelector(getUser)
+
 if (allShopped.length === 0) {
 Navigate('/empty')
 }
@@ -37,7 +40,7 @@ console.log(allShopped)
             </div>
         <div className="text-center">
         <h1 className=" animate-bounce text-2xl font-mono antialiased text-slate-900 uppercase lg:text-7xl  ">
-         Happy Shopping IB! </h1>
+         Happy Shopping {username}! </h1>
            
         </div>
        

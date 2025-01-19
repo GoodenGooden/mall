@@ -1,6 +1,6 @@
 
 
-function Plus({id, handleShopped}) {
+function Plus({id, handleShopped, cartShopped}) {
 
 
 function handleClick ()  {
