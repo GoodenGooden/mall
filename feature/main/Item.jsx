@@ -86,9 +86,9 @@ function handleCart() {
 
     return (
         
-  <div>
-     <img src= {image} alt="img" />
-     <div className="flex justify-around bg-slate-900">
+  <div> 
+     <img className="h-5/6" src= {image} alt="img" />
+     <div className="flex justify-around  bg-slate-900">
          <div className="text-white"> <Minus id={id} handleCart={handleCart} cartShopped={cartShopped} /> </div>
          <div className="text-white"> {currentQuantity} </div>
          <div className="text-white"> <Hearted  id={id} handleLiked={handleLiked} ifLiked = {ifLiked}/> </div>
@@ -97,7 +97,7 @@ function handleCart() {
      </div>
      <div className=" text-center font-bold text-slate-900">#{price} </div>
    
-     <div className=" text-center font-bold text-slate-900 mt-1">{title} </div>
+     <div className=" text-center text-lg font-bold text-slate-900 mt-1">{title} </div>
      
     </div>
 

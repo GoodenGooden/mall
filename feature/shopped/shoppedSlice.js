@@ -66,3 +66,4 @@ export const getCurrentQuantityById = (id) => (state) =>
 export const getTotalCartQuantity = (state) =>        //the variable has to start with get  which we use in ourSelector in cartOverview
   state.shoppedItem.cart.reduce((sum, item) => sum + item.quantity, 0);
 
+"explain this whole code for 5 year old"
