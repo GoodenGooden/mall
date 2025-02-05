@@ -15,13 +15,14 @@ setShow((show) => !show);
 
 
     return (
-        <div >
+        <div className="bg-slate-700 h-screen relative " >
       {show && <User />   }
-            <div>
-<div className="bg-cover bg-center h-screen bg-[url('/image/happy.webp')]">
+            <div >
+<div >
+<img className="bg-cover w-full h-screen absolute mix-blend-overlay" src="/image/happy.webp "/>
 <div className="flex absolute top-1/2 left-1/1 px-6 lg:top-2/4 left-1/4 ">
-<p className="font-mono antialiased text-slate-800 lg:text-6xl font-bold uppercase  ">For Amazing Shopping Start By Telling Us Your Name </p>
-    <button onClick={handleClick} className="text-slate-900 animate-pulse "> 
+<p className=" antialiased text-neutral-300 font-serif lg:text-5xl font-bold uppercase">For Amazing Shopping Start By Telling Us Your Name </p>
+    <button onClick={handleClick} className="text-neutral-300 animate-pulse "> 
 <Arrow />
 
 </button>
@@ -35,3 +36,8 @@ setShow((show) => !show);
 }
 
 export default Home
+
+
+/*
+className="bg-cover bg-center h-screen bg-[url('/image/happy.webp')]  " 
+*/

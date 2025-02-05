@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.div {
+    border-image-source: linear-gradient(red, blue);
+    border-image-slice: fill 1;
+}
+
+
