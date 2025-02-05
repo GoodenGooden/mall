@@ -86,8 +86,8 @@ function handleCart() {
 
     return (
         
-  <div> 
-     <img className="h-5/6 w-full"  src= {image} alt="img" />
+  <div className="mb-28"> 
+     <img className="h-full w-full" src= {image} alt="img" />
      <div className="flex justify-around  bg-slate-900">
          <div className="text-white"> <Minus id={id} handleCart={handleCart} cartShopped={cartShopped} /> </div>
          <div className="text-white"> {currentQuantity} </div>

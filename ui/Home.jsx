@@ -19,7 +19,7 @@ setShow((show) => !show);
       {show && <User />   }
             <div >
 <div >
-<img className="bg-cover w-full h-screen absolute mix-blend-overlay" src="/image/happy.webp "/>
+<img className=" w-full h-screen object-cover absolute mix-blend-overlay" src="/image/happy.webp "/>
 <div className="flex absolute top-1/2 left-1/1 px-6 lg:top-2/4 left-1/4 ">
 <p className=" antialiased text-neutral-300 font-serif lg:text-5xl font-bold uppercase">For Amazing Shopping Start By Telling Us Your Name </p>
     <button onClick={handleClick} className="text-neutral-300 animate-pulse "> 
